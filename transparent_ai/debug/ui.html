@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transparent AI – Streaming</title>
+</head>
+
+<body>
+    <h2>Live LLM Output</h2>
+    <pre id="output"></pre>
+
+    <script>
+        const evt = new EventSource("http://localhost:8000/stream");
+        evt.onmessage = (e) => {
+            document.getElementById("output").innerText += e.data + " ";
+        };
+    </script>
+
+</body>
+
+</html>

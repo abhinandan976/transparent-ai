@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transparent-ai"
+version = "0.1.0"
+description = "A transparent, graph-based AI orchestration framework"
+authors = [{ name = "Abhinandan" }]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+dependencies = [
+  "pydantic>=2.6",
+  "fastapi",
+  "uvicorn",
+  "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/<your-username>/transparent-ai"
+Repository = "https://github.com/<your-username>/transparent-ai"
